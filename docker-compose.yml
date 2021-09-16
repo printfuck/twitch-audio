@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  stream:
+    build: .
+    ports:
+      - "192.168.98.45:8005:80"
+    volumes:
+      - "./dump:/usr/share/nginx/html"
+    environment:
+      - "STREAM_URL=https://www.twitch.tv/redbull"
