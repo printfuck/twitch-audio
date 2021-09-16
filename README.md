@@ -1,5 +1,5 @@
 # Streamlink-audio-stream
-This project aims to simplify serving a high quality and low bandwidth audio stream from live streams of Twitch (or other streamlink supported platforms). Twitch might serve audio_only streams, but their bandwidth is too high for some rural areas of germany.
+This project aims to simplify serving high quality and low bandwidth audio streams from Twitch live streams (or other streamlink supported platforms). Twitch might serve audio_only streams, but their bandwidth is too high for some rural areas of germany.
 
 ## Setup
 ```
