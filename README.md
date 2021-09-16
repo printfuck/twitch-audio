@@ -1,5 +1,5 @@
 # Streamlink-audio-stream
-This project aims to simplify serving just an high quality and low bandwidth audio stream from live Twitch (or other streamlink supported platforms). Twitch might serve audio_only streams, but their bandwidth is too high for some rural areas of germany.
+This project aims to simplify serving a high quality and low bandwidth audio stream from live streams of Twitch (or other streamlink supported platforms). Twitch might serve audio_only streams, but their bandwidth is too high for some rural areas of germany.
 
 ## Setup
 ```
@@ -24,4 +24,4 @@ On the exposed port a playlist link is served. **Copy** that link and paste it t
 
 ## Modification
 
-Chosen codec is opus at 64kbps, which still produces excellent quality at low bandwith. You might also go with HEIC AAC (libfdkaac), which is available through using precompiled binaries by jrottenberg.
+Chosen codec is opus at 64kbps, which still produces excellent quality at low bandwith. You might also go with HE-AAC(v1/v2) (libfdkaac), which is available through using precompiled binaries by jrottenberg.
