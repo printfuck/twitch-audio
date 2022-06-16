@@ -7,13 +7,13 @@ version: "3.6"
 
 services:
   stream:
-    build: .
+    image: pkill/twitch-audio
     ports:
-      - "8005:80"
+      - "8000:80"
     volumes:
       - "./dump:/usr/share/nginx/html"
     environment:
-      - "STREAM_URL=https://www.twitch.tv/redbull"
+      - "STREAM_URL=https://www.twitch.tv/maty"
 ```
 ### dump folder
 ffmpeg creates 10s segemnts, which are served via nginx on the exposed port. If you'd like to preserve them, you can make it a volume as seen above.

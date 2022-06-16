@@ -2,10 +2,11 @@ version: "3.6"
 
 services:
   stream:
+    image: pkill/twitch-audio
     build: .
     ports:
-      - "192.168.98.45:8005:80"
-    volumes:
+      - "8000:80"
+    volumes: # Not necessary
       - "./dump:/usr/share/nginx/html"
     environment:
-      - "STREAM_URL=https://www.twitch.tv/redbull"
+      - "STREAM_URL=https://www.twitch.tv/maty"
