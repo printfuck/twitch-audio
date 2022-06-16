@@ -3,7 +3,6 @@ version: "3.6"
 services:
   stream:
     image: pkill/twitch-audio
-    build: .
     ports:
       - "8000:80"
     volumes: # Not necessary
