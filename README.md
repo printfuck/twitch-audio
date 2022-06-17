@@ -1,5 +1,5 @@
 # Streamlink-audio-stream
-Twitch doesn't serve a **audio only** for developers at all. They are currently offering the audio-only feature only inside their app. This project should enable everyone to get an audio stream as fast as possible, without using the twitch-proprietary app environment.
+Twitch **doesn't serve** an **audio-only API** for developers at all. They are currently offering the audio-only feature only inside their app. This project should enable everyone to get an audio stream as fast as possible, without using the twitch-proprietary app environment.
 
 ## Setup
 ```
