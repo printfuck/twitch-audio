@@ -1,5 +1,5 @@
 # Streamlink-audio-stream
-Twitch **doesn't serve** an **audio-only API** for developers at all. They are currently offering the audio-only feature only inside their app. This project should enable everyone to get an audio stream as fast as possible, without using the twitch-proprietary app environment.
+This project should enable everyone to get an audio stream via streamlink and its supported platforms as fast as possible.
 
 ## Setup
 ```
@@ -13,7 +13,9 @@ services:
     volumes:
       - "./dump:/usr/share/nginx/html"
     environment:
-      - "STREAM_URL=https://www.twitch.tv/maty"
+      # LoFi Girl
+      - "STREAM_URL=https://www.youtube.com/watch?v=jfKfPfyJRdk"
+      - "QUALITY=480p"      
 ```
 ### dump folder
 ffmpeg creates 10s segemnts, which are served via nginx on the exposed port. If you'd like to preserve them, you can make it a volume as seen above.

@@ -3,9 +3,11 @@ version: "3.6"
 services:
   stream:
     image: pkill/twitch-audio
+    #build: .
     ports:
-      - "8000:80"
+      - "8337:80"
     volumes: # Not necessary
       - "./dump:/usr/share/nginx/html"
     environment:
-      - "STREAM_URL=https://www.twitch.tv/maty"
+      - "STREAM_URL=https://youtube.com/watch?v=jfKfPfyJRdk"
+      - "QUALITY=480p"
